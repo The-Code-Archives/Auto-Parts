@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase success</title>
+</head>
+<body>
+<h1>Moe's Auto Parts</h1>
+<hr>
+<h2 style="font-size: 1.5rem">Your purchase was successfully made.</h2>
+
+<p>Confirmation Date: <span th:text="${#dates.format(#dates.createNow(), 'MM-dd-yyyy')}"></span></p>
+
+<p>Confirmation Number: <span th:text="${confirmationNumber}"></span></p>
+
+<a th:href="@{/mainscreen}" style="padding: 10px 10px; background-color: #40A4FF; border: 5px black solid; text-decoration: none; color:white ">Back to main screen</a>
+</body>
+</html>
